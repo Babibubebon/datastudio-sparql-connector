@@ -87,7 +87,7 @@ function getData(request) {
 function _checkEndpointURL(url) {
   var body = null;
   try {
-    var formData = { 'query': 'SELECT * {?x ?y ?z} LIMIT 1' };
+    var formData = { 'query': 'SELECT * WHERE {?x ?y ?z} LIMIT 1' };
     var requestOptions = {
       'method': 'post',
       'headers': { Accept: 'application/sparql-results+json' },
